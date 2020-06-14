@@ -1,0 +1,559 @@
+
+body{
+	margin: 0px;
+	font-family: 'Merienda', cursive;
+	user-select: none;
+}
+
+.navi{
+	display: block;
+	position: sticky;
+	z-index: 1;
+	top: 0px;
+	background-color: #F8F9FA;
+	padding: 15px;
+}
+
+.logo{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+.brand{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-right: auto;
+	margin-left: 10px;
+	line-height: 50px;
+}
+
+.nulist{
+	float: right;
+	display: inline; 
+}
+
+.nitem{
+	display: inline;
+	padding: 5px;
+}
+
+.nlink{
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #838484;
+}
+
+.nlink:hover{
+	color: black;
+}
+
+.welcome{
+	/*border:2px solid black;*/
+	background: url('images/slider1.jpg');
+	background-size: cover;
+	height: 130vh;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.weltext{
+	position: absolute;
+	font-size: 32px;
+	color: white;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.restaurant{
+	padding: 15px 100px;
+}
+.title{
+	display: block;
+	text-align: center;
+	font-size: 32px;
+	padding: 15px;
+}
+
+.location{
+	background-color: #F8F9FA;
+	padding: 15px;
+}
+.lpic{
+	display: inline-block;
+	float: right;
+	height: 350px;
+	width: 48%;
+	margin: 5px;
+}
+.lpic img{
+	height: 350px;
+	width: 100%;
+}
+.lpar{
+	display: inline-block;
+	font-size: 15px;
+	height: 350px;
+	width: 48%;
+	margin: 5px;
+}
+.cuisine{
+	background-color: #F8F9FA;
+	padding: 15px;
+}
+.cpic{
+	display: inline-block;
+	height: 350px;
+	width: 48%;
+	margin: 5px;
+}
+.cpic img{
+	height: 350px;
+	width: 100%;
+}
+.cpar{
+	float: right;
+	display: inline-block;
+	font-size: 15px;
+	height: 350px;
+	width: 48%;
+	margin: 5px;
+}
+.head3{
+	font-weight: normal;
+	font-size: 28px;
+	margin: 0px;
+}
+
+.head5{
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.menu{
+	padding: 15px 100px;
+}
+.container{
+	background-color: #F8F9FA;
+	padding: 10px;
+	overflow: hidden;
+}
+.menuitems{
+	border: 1px solid #D3D3D3;
+	width: 31%;
+	height: 600px;
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+.menuitems img{
+	width: 100%;
+	height: 200px;
+}
+.menuitems:hover .menulistitem{
+	font-weight: bold;
+}
+.menuitems:hover .menuhead{
+	font-weight: bold;
+}
+.menuhead{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 15px 20px;
+}
+/*.menuhead:hover{
+	font-weight: bold;
+}*/
+.menulist{
+	list-style-type: none;
+}
+/*.menulist:hover .menulistitem{
+	font-weight: bold;
+}*/
+.menulistitem{
+	font-size: 15px;
+	border-top: 1px solid #D3D3D3;
+	text-align: left;
+	padding:15px 0px;
+	margin-right: 20px;
+}
+.reservation{
+	padding: 15px 100px;
+}
+.rcontainer{
+	position: relative;
+}
+.rbanner{
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	opacity: 0.5;
+}
+.rhead{
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	display: block;
+	text-align: center;
+	height: 50%;
+	font-size: 20px;
+}
+.rhead h1{
+	font-weight: normal;
+}
+.lsubs{
+	z-index: 0;
+	top: 65%;
+	left: 25%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	display: inline;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+}
+.lsubs h2{
+	font-weight: normal;
+}
+.rsubs{
+	z-index: 0;
+	top: 65%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	display: inline;
+	float: right;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+}
+.rsubs h2{
+	font-weight: normal;
+}
+.rform{
+	padding: 15px 100px;
+}
+.resform{
+	background-color: #F8F9FA;
+	padding: 10px;
+}
+.fcon{
+	overflow: hidden;
+}
+.fleft{
+	font-size: 15px;
+	width: 46%;
+	display: inline-block;
+	padding: 10px; 
+	margin: 6px;
+	float: left;
+}
+.fleft input{
+	font-family: 'Merienda', cursive;
+	width: 95%;
+	padding: 8px 12px;
+	margin:10px 0px;
+	border: 2px solid #D3D3D3;
+	border-radius: 5px;
+	outline: none;
+}
+.fleft input:focus{
+	border-color: #80BDFF;
+}
+.fleft h3{
+	margin: 0px;
+	font-size: 28px;
+	font-weight: normal;
+}
+.fright{
+	font-size: 15px;
+	width: 46%;
+	display: inline-block;
+	padding: 10px;
+	margin: 6px;
+}
+.fright input{
+	font-family: 'Merienda', cursive;
+	width: 95%;
+	padding: 8px 12px;
+	margin:10px 0px;
+	border: 2px solid #D3D3D3;
+	border-radius: 5px;
+	outline: none;
+}
+.fright input:focus{
+	border-color: #80BDFF;
+}
+.fright h3{
+	margin: 0px;
+	font-size: 28px;
+	font-weight: normal;
+}
+.fbottom{
+	display: block;
+	margin: 10px;
+}
+.fbottom textarea{
+	font-family: 'Merienda', cursive;
+	width: 92%;
+	padding: 12px;
+	margin:10px 0px;
+	border: 2px solid #D3D3D3;
+	border-radius: 5px;
+	outline: none;
+}
+.fbottom textarea:focus{
+	border-color: #80BDFF;
+}
+.fbottom input{
+	width: 25%;
+	background-color: #6C757D;
+	font-family: 'Merienda', cursive;
+	font-size: 15px;
+	color: white;
+	margin: 10px 0px;
+	padding: 8px 12px;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	outline: none;
+}
+.fbottom input:hover{
+	background-color: #575f66;
+}
+.ourlocation{
+	padding: 15px 100px;
+}
+.locbox{
+	background-color: #F8F9FA;
+	overflow: hidden;
+	padding: 5px;
+}
+.map{
+	width: 75%;
+	display: inline-block;
+	float: left;
+}
+.address{
+	width: 20%;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px;
+}
+.address h3{
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+.footer{
+	padding: 15px 100px;
+	margin-bottom: 100px;
+}
+.footcontainer{
+	background-color: #F8F9FA;
+}
+.footitems{
+	width: 33%;
+	text-align: center;
+	display: inline-block;
+}
+#icon{
+	color: #028bdb;
+}
+#icon:hover{
+	color: #0c73af;
+}
+.footitems a{
+	color: #028bdb;
+	text-decoration: none;
+}
+.footitems a:hover{
+	color: #0c73af;
+}
+
+@media screen and (max-width: 600px){
+
+	.navi{
+		display: block;
+		padding: 10px;
+		position: fixed;
+		top: 0px;
+		z-index: 1;
+		width: 100%;
+	}
+
+	.nulist{
+		float: none;
+		display:block;
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		background-color: #F8F9FA;
+		z-index: 1;
+		margin:0px;
+		padding: 5px;
+	}
+	.nitem{
+		font-size: 10px;
+		background-color: #F8F9FA;
+		padding: 0px 10px;
+	}
+	.nlink{
+		padding: 0px;
+	}
+
+	.logo{
+		/*line-height: 50px;*/
+		font-size: 20px;
+	}
+
+	.welcome{
+		padding-top:150px; 
+		height: 50vh;
+		background-repeat: no-repeat;
+	}
+	.weltext{
+	top: 60%;
+	}
+
+	.restaurant{
+	padding: 10px;
+	}
+	.location{
+	padding: 0px;
+	display: unset;
+	}
+	.lpic{
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+	.lpar{
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+	.cuisine{
+	padding: 0px;
+	display: unset;
+	}
+	.cpic{
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+	.cpar{
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+	.menu{
+		padding: 10px;
+	}
+	.container{
+		padding: 0px;
+	}
+	.menuitems img{
+		width: 100%;
+		height: 300px;
+	}
+	.menuitems{
+		border: none;
+		width: 100%;
+		display: block;
+		float: none;
+		margin: 15px 0px;
+	}
+	.menulistitem{
+		font-size: 12px;
+	}
+	.menulist:hover .menulistitem{
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.reservation{
+	padding: 10px;
+	}
+	.rcontainer{
+	height: 50vh;
+	}
+	.rbanner{
+	height: 50vh;
+	}
+	.rhead{
+	top: 40%;
+	}
+	.rform{
+	padding: 10px;
+	}
+	.resform{
+	padding: 0px;
+	}
+	.fright{
+	padding: 0px;
+	margin: 6px;
+	}
+	.fleft{
+	padding: 0px;
+	margin: 6px;
+	}
+	.fleft input{
+	padding: 10px 0px;
+	margin:10px 0px;
+	}
+	.fright input{
+	padding: 10px 0px;
+	margin:10px 0px;
+	}
+
+    .fbottom{
+    padding: 0px;
+	margin: 6px;
+	}
+	.fbottom textarea{
+	width: 90%;
+	font-size: 10px;
+	padding: 10px 0px;
+	margin:10px 0px;
+	}
+	.fbottom input{
+	color: white;
+	padding: 10px 0px;
+	margin:10px 0px;
+	}
+	.ourlocation{
+	padding: 10px;
+	}
+	.locbox{
+	padding: 0px;
+	}
+	.map{
+	padding: 10px;
+	width: 100%;
+	display: block;
+	float: none;
+	}
+	.address{
+	width: 100%;
+	display: block;
+	font-size: 15px;
+	padding: 10px;
+	}
+	.footer{
+	padding: 10px;
+	}
+	.footitems{
+	height: 100%;
+	width: 31%;
+	}
+}
